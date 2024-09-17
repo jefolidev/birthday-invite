@@ -1,0 +1,70 @@
+.color-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+input[type='radio'] {
+  border: transparent;
+  outline: transparent;
+  &[name='color'] {
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.color-inner {
+  background-color: var(--shape-button);
+
+  width: 3rem;
+  height: 3rem;
+
+  border: 2px solid transparent;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:has(:checked) {
+    border: 2px solid var(--brand-light);
+  }
+
+  & #red {
+    background-color: var(--danger);
+  }
+  & #orange {
+    background-color: var(--orange);
+  }
+  & #yellow {
+    background-color: var(--yellow);
+  }
+  & #lime {
+    background-color: var(--lime);
+  }
+  & #green {
+    background-color: var(--green);
+  }
+  & #cyan {
+    background-color: var(--cyan);
+  }
+  & #light-blue {
+    background-color: var(--brand-light);
+  }
+  & #navy {
+    background-color: var(--navy);
+  }
+  & #purple {
+    background-color: var(--purple);
+  }
+  & #fuchsia {
+    background-color: var(--fuchsia);
+  }
+  & #pink {
+    background-color: var(--pink);
+  }
+}

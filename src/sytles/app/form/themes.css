@@ -1,0 +1,44 @@
+.theme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.theme-inner {
+  background-color: var(--input-stroke);
+  width: 100%;
+
+  padding: 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+
+  border: 1.5px solid transparent;
+  border-radius: 0.5rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+
+  & input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:has(:checked) {
+    border: 1.5px solid var(--brand-light);
+    border-radius: 0.5rem;
+  }
+}

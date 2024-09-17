@@ -1,0 +1,89 @@
+:root {
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --purple: #b259ff;
+  --fuchsia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  --danger: #ff5959;
+
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  --font-leckerli: 'Leckerli One', sans-serif;
+  --font-baloo: 'Baloo 2', sans-serif;
+  --font-open: 'Open Sans', sans-serif;
+
+  --logo: 400 2.5rem/1.25 var(--font-leckerli);
+
+  --heading-md: 800 1.75rem/1.25 var(--font-baloo);
+  --heading-sm: 800 1.125rem/1.25 var(--font-baloo);
+
+  --body-md: 400 1rem/1.25 var(--font-open);
+  --body-sm: 400 0.875rem/1.25 var(--font-open);
+  --body-xs: 400 0.75rem/1.25 var(--font-open);
+
+  --body-md-bold: 600 1rem/1.25 var(--font-open);
+  --body-sm-bold: 600 0.875rem/1.25 var(--font-open);
+  --body-xs-bold: 600 0.75rem/1.25 var(--font-open);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-heading);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font: var(--logo);
+}
+
+h2,
+h3 {
+  font-family: var(--font-open);
+}
+
+span,
+p {
+  font: var(--body-md);
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 1;
+}
